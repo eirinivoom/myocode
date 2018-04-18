@@ -1,0 +1,412 @@
+/* GENERAL styles
+------------------------------------------------- */
+/* Padding below the footer*/
+    
+body {
+    padding-top: 50px;
+    font-family: "Tahoma", 'Roboto', 'Source Sans Pro' , sans-serif;
+    font-size: 15px;
+}
+
+.well{
+    width:95%;
+    margin:auto;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 2%;
+}
+
+
+/* NAVIGATION BAR styles
+------------------------------------------------- */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #3d3d3d;
+    max-height: 50px;
+    position: fixed;  
+}
+
+.navbar-brand>img{
+    height: 45px;
+    padding: 0px 0px 25px 10px;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    background-color: #3d3d3d; /* max-height: 60px to hide the (dunno why)space between navbar and dropdown*/
+}
+
+.navbar-inverse {
+    border-color: #3d3d3d;
+}
+
+/* -- responsive - navigation bar styles -- */
+@media(min-width:768px){
+    .dropdown-menu, .dropdown-menu>li>a{
+        background-color: #e5e5e5;
+        color:#606060;
+    }
+    .dropdown-menu>li>a:hover, .dropdown-menu>.active>a {
+        background-color: #3d3d3d;
+        color:#fff;
+    }
+    
+    .dropdown-menu>.active>a:hover{
+        background-color:#000;
+    }
+}
+
+@media(max-width:767px){
+    .nav-item, .nav-item.active, .dropdown-item, a.dropdown-item{
+        text-align: center;
+        background-color: #3d3d3d;
+    }
+    
+    /*-----To change color to the dropdown item after clicked----*/
+    .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a{
+        background-color: #3d3d3d;
+    }
+    a.dropdown-item{
+        background-color: #606060;
+    }
+    
+    .navbar-nav .open .dropdown-menu>.active>a:hover{
+        background-color: #000;
+    }
+}
+
+
+/* CAROUSEL styles
+------------------------------------------------- */
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+}
+
+/* Space between carousel and 3 columns */
+.carousel {
+    margin-bottom: 1%;
+  
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 25%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+    background-color:#777;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.dumbells, .nutrition{
+    text-shadow: 1px 1px 10px #000000;
+}
+
+@media (max-width: 767px) {
+    .dumbells, .nutrition{
+        font-size:14px;
+        text-shadow:2px 2px 4px #000000;
+    }
+        
+    .carousel-inner img {
+        width: 100%; /* Set width to 100% */
+        margin: auto;
+        min-height:140px;
+    }
+    
+    .carousel-caption {
+        bottom: 15%;
+    }
+    
+    .btn{
+        font-size:12px;
+    }
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* MAILCHIMP
+-------------------------------------------------- */
+.mailchimph4 {
+    margin-bottom:2px;
+}
+.clear {
+    margin-top: 1%;
+    padding: 1px;
+}
+
+#mce-EMAIL.email {
+    border-radius:6px;
+    text-align: center;
+}
+
+/* FOOTER styles
+------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    padding-bottom: 330px;
+    
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 330px; /* Set the fixed height of the footer here */
+    background-color: #3d3d3d;
+    color: #dbdbdb;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.footer a{
+    color:#3196b7;
+    
+}
+
+.footer a:hover{
+    color:#7fc8e0;
+    
+}
+
+.footer .glyphicon{
+    color:#8e8e8e;
+    padding: 0 5px 0 0;
+    border-right: 1px solid #8e8e8e;
+    margin: 0 5px 0 0;
+    
+}
+
+.footer .fab{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.footer .fab:hover{
+    text-decoration: none;
+}
+/*responsive footer - max-width:768px -mob
+-----------------------------------------------------*/
+@media only screen and (max-width: 768px){
+    body{
+        padding-bottom: 600px;
+    }
+    .footer{
+        height:600px;
+    }
+}
+/*responsive footer - min-width:920px -xl
+-----------------------------------------------------*/
+@media only screen and (min-width: 920px){
+    body{
+        padding-bottom: 290px;
+    }
+    .footer{
+        height:290px;
+    }
+}
+
+
+/* CONTACT US
+-------------------------------------------------- */
+.form{
+    padding-top: 50px;
+    font-family: "Tahoma", 'Roboto', 'Source Sans Pro' , sans-serif;
+    font-size: 30px;
+    
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+ 
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+/* BLOG ------ blog.html
+-------------------------------------------------- */
+.blogabout {
+    margin: 2% 0;
+}
+
+.blogabout .fa-comments{
+    font-size: 64px;
+}
+
+.panel{
+    border-radius: 4px;
+}
+
+h3.blogpanel{
+    margin: 2%;
+}
+
+.blogparent.panel.panel-default{
+    margin: 3% 0;
+}
+
+i.fas.fa-share-alt{
+    padding-right:4px
+}
+
+
+img.blogparent.pull-left{
+    max-width: 150px;
+    margin-right: 4%;
+}
+li.blog{
+    padding-bottom: 15px;
+}
+
+li.blog:last-child{
+    padding-bottom: 0;
+}
+
+a.blog{
+    color:#444;
+    padding-left:2%;
+}
+
+a.blog:hover{
+    color:#337ab7;
+}
+
+
+/* BLOG CHILDRENS
+-------------------------------------------------- */
+
+.about{
+    margin-top:10%;
+}
+
+.about .fa-info-circle{
+    font-size: 64px;
+}   
+    
+.posts h1 a{
+    color: #444;
+}
+
+h1.blogposth1{
+    margin-top:2%;
+}
+
+.post.img-responsive{
+    width:50%;
+    float: left;
+    padding: 5%;
+    padding-top:0;
+}
+    
+.postsubtitle{
+    margin-bottom: 1%;
+    color: #777;
+}
+
+.sharesubtitle{
+    margin-bottom: 3%;
+}
+
+.postsubtitle li{
+    border-right: 1px solid #ddd;
+}
+
+.postsubtitle li:last-child{
+    border-right: none;
+}
+
+
+a.backtoblog{
+    color: #3d3d3d;
+}
+
+a.backtoblog:hover{
+    color:#337ab7;
+    text-decoration:none;
+}
+i.fas.fa-undo{
+    padding: 3% 1% 0 0;
+}
+
+/*.well.comment{
+    padding: 2%;
+}
+
+h3.blogcomment{
+    margin: 0;
+}
+
+#comments, #comments li {
+    margin: 0;
+    padding: 0;
+}
+ 
+#comments li {
+    list-style: none;
+}*/
+
+
+
+
+/*responsive blog childrens - max-width:768px -mob
+-----------------------------------------------------*/
+@media only screen and (max-width: 768px){
+    .post.img-responsive{
+        width:100%;
+    }
+    .about{
+    margin-top:1%;
+}
+}
+/*responsive blog childrens- min-width:920px
+-----------------------------------------------------*/
+@media only screen and (min-width: 920px){
+    .post.img-responsive{
+        width:65%;
+    }
+
+}
+
